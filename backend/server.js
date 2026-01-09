@@ -2,9 +2,9 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-const Port 3000;
+const PORT = 3000;
 
-app.use(express.json());
+app.use(express.json(}}}}}}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/api/hello', (req, res) => {
@@ -22,5 +22,5 @@ const server = app.listen(PORT, () => {
 process.on('SIGINT', () => {
 	console.log('Shutting down server');
 	server.close(() => process.exit(0));
-}
 });
+
