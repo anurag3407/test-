@@ -15,15 +15,5 @@ app.get('/', (req, res) => {
 	res.json({ status: 'ok', time: new Date().toISOString() });
 });
 
-const server = app.listen(PORT, () => {
-	console.log(`Server listening on http://localhost:${PORT}`);
-});
-
-process.on('SIGINT', () => {
-	console.log('Shutting down server');
-	server.close(() => process.exit(0));
-});
-
-]]]]]
 
 }}}
