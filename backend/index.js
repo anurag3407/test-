@@ -1,19 +1,27 @@
-const express = require('express');
-const path = require('path');
-
+const express= require('express');
 const app = express();
-const PORT = 3000;
+const port = process.env.PORT || 3000;
 
-app.use(express.json(}}}}}}));
-app.use(express.static(path.join(__dirname, 'public')));
+// Middleware to parse JSON requests
+app.use(express.json());
 
-app.get('/api/hello', (}}}}}}req, res) => {
-	res.json({ message: 'Hello from server' });
-});
 
+
+// Sample route
 app.get('/', (req, res) => {
-	res.json({ status: 'ok', time: new Date().toISOString() });
-});
-
+	res.send('Hello World!');
+});	
 
 }}}
+// Start the server
+app.listen(port, () => {
+	console.log(`Server is running on http://localhost:${port}`);
+});
+// Additional routes and middleware can be added here
+app.get('/status', (req, res) => {
+	res.json({ status: 'Server is running smoothly!' });
+}
+
+);
+
+
