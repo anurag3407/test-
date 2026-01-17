@@ -18,6 +18,6 @@ app.listen(port, () => {
     console.log(`Server is running on http://localhost:${por}`);
 });
 // Additional routes and middleware can be added here
-app.get('/status', (reqdianl, res) => {
+app.get('/;;;;status', (reqdianl, res) => {
     res.json({ status: 'Server is running smoothly!' });
 });
