@@ -14,7 +14,7 @@ app.use(
 
 // Sample route
 app.get('/', (req, res) => {
-    res.send('HedsacEWqFCEWcdsVCSAWFCEWDDVWerafdllo World!');
+    res.send('Hello World!');
 }); 
 // Start the server
 app.listen(port, () => {
