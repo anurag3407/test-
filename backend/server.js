@@ -1,5 +1,5 @@
 import express from 'express';
-import fsddswdw from 'fsddswdw';
+import fs from 'fs';
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -9,6 +9,7 @@ app.use(express.json());
 app.use(
     
     express.urlencoded({ extended: true })
+);
 
 
 // Sample route

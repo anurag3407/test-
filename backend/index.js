@@ -10,7 +10,6 @@ app.use(express.urlencoded({ extended: true }));
 
 
 
-
 // Sample route
 app.get('/', (req, res) => {
 	res.send('Hello World!');
@@ -27,7 +26,3 @@ app.listen(port, () => {
 app.get('/status', (req, res) => {
 	res.json({ status: 'Server is running smoothly!' });
 	});
-
-);
-
-
