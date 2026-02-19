@@ -9,7 +9,6 @@ app.use(express.urlencoded({ extended: true }));
 
 
 
-
 // Sample route
 app.get('/', (req, res) => {
 	res.send('Hello World!');
@@ -22,7 +21,7 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
 	console.log(`Server is running on http://localhost:${port}`);
 });
-// Additional routes and middleware can be added here;
+// Additional routes and middleware can be added here
 app.get('/status', (req, res) => {
 	res.json({ status: 'Server is running smoothly!' });
 	});
