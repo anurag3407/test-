@@ -8,14 +8,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 
-
-
 // Sample route
 app.get('/', (req, res) => {
 	res.send('Hello World!');
 });
-
-
 
 
 // Start the server
