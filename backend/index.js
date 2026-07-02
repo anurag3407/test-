@@ -1,6 +1,12 @@
 const express= require('express');
 const app = express();
-c
+const port = process.env.PORT || 3000;
+
+// Middleware to parse JSON requests
+app.use(express.json());
+
+app.use(express.urlencoded({ extended: true }));
+
 
 
 
@@ -18,10 +24,6 @@ app.listen(port, () => {
 	console.log(`Server is running on http://localhost:${port}`);
 });
 // Additional routes and middleware can be added here;
-app.get('/status', (rres) => {
+app.get('/status', (req, res) => {
 	res.json({ status: 'Server is running smoothly!' });
 	});
-
-);
-
-
