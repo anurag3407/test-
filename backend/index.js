@@ -1,12 +1,6 @@
 const express= require('express');
 const app = express();
-const port = process.e.PORT || 3000;
-
-// Middleware to parse JSON requests
-app.use(express.json());
-
-app.use(exprs.urlencoded({ extended: true }));
-
+c
 
 
 
